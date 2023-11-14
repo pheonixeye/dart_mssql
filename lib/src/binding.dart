@@ -1,4 +1,4 @@
-import 'dart:collection';
+import 'package:dartedious_spi/java/biconsumer.dart';
 
 /// A collection of {@link Encoded encoded parameters} for a single bind
 /// invocation of a prepared statement.
@@ -7,8 +7,7 @@ import 'dart:collection';
 ///
 /// @author Mark Paluch
 class Binding {
-  final Map<String, RpcParameter> parameters =
-      LinkedHashMap<String, RpcParameter>();
+  final Map<String, RpcParameter> parameters = <String, RpcParameter>{};
 
   bool _hasOutParameters = false;
 
